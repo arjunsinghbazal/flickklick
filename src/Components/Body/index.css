@@ -1,0 +1,210 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+.container {
+    max-width: 99.8%;
+    margin: 0;
+  }
+  
+  .heading {
+    font-size: 24px;
+    margin-top: 14px;
+    text-align: center;
+  }
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the items horizontally */
+    align-items: center;     /* Center the items vertically */
+    gap: 20px;
+    width: 90%;
+    padding: 1rem;
+    margin: 0 auto; 
+    margin-bottom: 3.5rem; 
+    /* margin-bottom: 200px;        Center the entire container horizontally */
+  }
+  
+  .card {
+  border: 1px solid #ddd;
+  padding: 0.7rem !important;
+  background-color: lightslategray;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  width: 15%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  }
+  
+  .poster-image {
+    width: 100%;
+    height: 190px;
+    border-radius: 8px;
+  }
+  
+  .title {
+    font-size: 15px;
+    white-space: nowrap;     /* Prevent line breaks */
+  overflow: hidden;        /* Hide overflow content */
+  text-overflow: ellipsis;
+  }
+  .details-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4px; /* Add margin for spacing */
+  }
+  .release-date {
+    font-size: 14px;
+    margin-bottom: 0.1rem;
+
+  }
+  
+  .media-type{
+    font-size: 14px;
+    text-transform: capitalize;
+  }
+  /* Add or update these styles in your existing styles.css or create a new CSS file */
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    background-color: gray;
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 10000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .scroll-to-top:hover {
+    background-color: #f0f0f0; /* Set hover background color */
+  }
+  
+  .scroll-to-top svg {
+    color: black; /* Set arrow color */
+  }
+  .linear-progress-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000; /* Ensure it's above other elements */
+  }
+  
+  .linear-progress {
+    width: 200px; /* Adjust the width as needed */
+  }
+
+  .pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: .5rem;
+    width: 95%;
+  }
+  
+/* 
+  //search// */
+
+  .search-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding:0.1rem 3rem;
+    color: gray;
+    background-color: darkgray;
+    width: 73%;
+    margin: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+border-radius: 3rem;
+}
+
+.not-found-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh; /* Adjust as needed */
+}
+
+.not-found-message img {
+  max-width: 100%;
+  max-height: 100%;
+}
+/* Media queries */
+
+/* Mobile view */
+@media (max-width: 600px) {
+  .card {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    background-color: lightslategray;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    width: 40%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    }
+  .search-container {
+    width: 80%;
+    padding: 0.1rem 1rem;
+  }
+ 
+  .details-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3px; /* Add margin for spacing */
+  }
+  
+  .media-type{
+    font-size: 14px;
+    text-transform: capitalize;
+  }
+}
+
+/* Tablet view */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .card {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    background-color: lightslategray;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    width: 24%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    }
+  .search-container {
+    width: 80%;
+    padding: 0.1rem 1rem;
+  }
+}
+
+/* Laptop view */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .card {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    background-color: lightslategray;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    width: 15%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    }
+  .search-container {
+    width: 80%;
+    padding: 0.1rem 1rem;
+  }
+  /* Add specific styles for laptop view if needed */
+}
+
