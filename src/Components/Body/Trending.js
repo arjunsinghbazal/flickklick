@@ -147,7 +147,7 @@ const Trending = () => {
               key={item.id}
             >
               <Badge
-                badgeContent={item.vote_average.toFixed(1)}
+                badgeContent={item.vote_average ? item.vote_average.toFixed(1) : '5'}
                 color={item.vote_average > 6 ? "primary" : "secondary"}
               >
                 <img
