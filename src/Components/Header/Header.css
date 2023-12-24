@@ -12,7 +12,9 @@
     color: gray;
     z-index: 100;
   }
-  
+  .header span{
+    color: black;
+  }
   @media (max-width: 1000px) {
     .header {
       padding-top: 10px;

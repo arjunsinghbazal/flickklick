@@ -6,7 +6,7 @@ const Header = () =>{
     return (
        <>
          <div className="header" onClick={()=>navigate("/")}>
-            Flickklick 
+            Fl<span>ic</span>kkl<span>ic</span>k 
         </div>
        </>
     )
