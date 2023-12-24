@@ -85,6 +85,7 @@ const Movies = () => {
               onChange={handlePageChange}
               color="primary"
               style={{ color: 'grey'}}
+              size="small"
             />
           </Stack>
         </div>

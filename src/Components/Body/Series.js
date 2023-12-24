@@ -86,6 +86,7 @@ const Series = () => {
               onChange={handlePageChange}
               color="primary"
               style={{ color: 'grey'}}
+              size="small"
             />
           </Stack>
         </div>

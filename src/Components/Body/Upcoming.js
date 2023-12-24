@@ -84,6 +84,7 @@ const url = `https://api.themoviedb.org/3/movie/upcoming?api_key=${Url}`;
               page={currentPage}
               onChange={handlePageChange}
               color="primary"
+              size="small"
               style={{ color: "grey" }}
             />
           </Stack>

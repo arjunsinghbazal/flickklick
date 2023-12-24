@@ -116,6 +116,7 @@ const Trending = () => {
           >
             <Pagination
               count={100}
+              size="small"
               page={currentPage}
               onChange={handlePageChange}
               color="primary"
