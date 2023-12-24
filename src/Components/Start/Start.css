@@ -5,6 +5,7 @@
     background-color: rgb(150, 159, 168);
     width: 100vw;
     height: 100vh;
+    overflow-y: hidden;
   }
 .start h1{
     font-size: 3rem;
@@ -52,7 +53,7 @@
     padding: 2rem;
     transition: opacity 1s ease-in-out, transform 0.5s ease-in-out; 
     position: relative;
-    animation: moveWord 60s linear infinite;
+    animation: moveWord 50s linear infinite;
   }
   
   .right img:hover {
@@ -69,36 +70,6 @@
     }
   }
   
-  @media (min-width: 480px) {
-    .right img {
-      animation: moveWordMobile 30s linear infinite;
-    }
-  
-    @keyframes moveWordMobile {
-        0% {
-            right: 0%;
-          }
-          100% {
-            right:500%;
-          }
-    }
-  
-
-  }
-  @media (min-width: 768px) {
-    .right img {
-      animation: moveWordMobile 15s linear infinite;
-    }
-  
-    @keyframes moveWordMobile {
-        0% {
-            right: 0%;
-          }
-          100% {
-            right:100%;
-          }
-    }
-  }
   @media (max-width: 768px) {
     .start {
         display: flex;
@@ -137,7 +108,21 @@
         margin-bottom: 1rem;
     height: 40%;
       }
-      
+      .right img {
+        animation: moveWordMobile 10s linear infinite;
+      }
+    
+      @keyframes moveWordMobile {
+          0% {
+              right: 0%;
+            }
+            100% {
+              right:100%;
+            }
+      }
+    
+  
+    }
       .right img {
         max-width:120px;
         height: auto;
@@ -147,7 +132,7 @@
         transition: opacity 1s ease-in-out, transform 0.5s ease-in-out; /* Add transform transition */
         position: relative;
       }
-  }
+  
   
   
   @media (min-width: 768px) and (max-width: 934px) {
@@ -192,6 +177,18 @@
         padding: 1rem;
         transition: opacity 1s ease-in-out, transform 0.5s ease-in-out; /* Add transform transition */
         position: relative;
+      }
+      .right img {
+        animation: moveWordMobile 10s linear infinite;
+      }
+    
+      @keyframes moveWordMobile {
+          0% {
+              right: 0%;
+            }
+            100% {
+              right:100%;
+            }
       }
   }
   
