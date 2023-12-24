@@ -86,8 +86,6 @@ const Series = () => {
               onChange={handlePageChange}
               color="primary"
               style={{ color: 'grey'}}
-              showFirstButton
-              showLastButton
             />
           </Stack>
         </div>

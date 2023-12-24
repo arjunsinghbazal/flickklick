@@ -85,8 +85,6 @@ const Movies = () => {
               onChange={handlePageChange}
               color="primary"
               style={{ color: 'grey'}}
-              showFirstButton
-              showLastButton
             />
           </Stack>
         </div>
