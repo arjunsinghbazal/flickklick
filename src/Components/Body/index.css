@@ -70,11 +70,11 @@
 
 .scroll-to-top {
     position: fixed;
-    bottom: 20px;
+    bottom: 4rem;
     right: 20px;
     cursor: pointer;
     background-color: gray;
-    padding: 10px;
+    padding: 0.5rem;
     border-radius: 50%;
     z-index: 10000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
