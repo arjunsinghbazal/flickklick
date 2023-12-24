@@ -8,9 +8,10 @@
   }
   
   .heading {
-    font-size: 2rem;
+    font-size: 1.3rem;
     margin-top:1rem;
     text-align: center;
+    text-transform: capitalize;
   }
   .card-container {
     display: flex;
