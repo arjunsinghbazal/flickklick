@@ -74,7 +74,7 @@ const url = `https://api.themoviedb.org/3/movie/upcoming?api_key=${Url}`;
       {!loading && (
         <div className="pagination">
           <Stack
-            spacing={2}
+            spacing={1}
             sx={{
               zIndex: "101"
             }}

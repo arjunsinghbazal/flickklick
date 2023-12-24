@@ -109,7 +109,7 @@ const Trending = () => {
       {!loading && data.length > 0 && totalPages > 1 && (
         <div className="pagination">
           <Stack
-            spacing={2}
+            spacing={1}
             sx={{
               zIndex: "101",
             }}

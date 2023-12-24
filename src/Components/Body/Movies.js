@@ -74,7 +74,7 @@ const Movies = () => {
       {!loading && (
         <div className="pagination">
           <Stack
-            spacing={2}
+            spacing={1}
             sx={{
               zIndex: "101"
             }}
