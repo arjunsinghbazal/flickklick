@@ -1,11 +1,11 @@
-.start {
+ .start {
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: rgb(150, 159, 168);
     width: 100vw;
     height: 100vh;
-    overflow-y: hidden;
+    overflow: hidden !important;
   }
 .start h1{
     font-size: 3rem;
