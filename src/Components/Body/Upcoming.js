@@ -16,7 +16,11 @@ const Upcoming = () => {
   const [selectedItemId, setSelectedItemId] = useState(null);
   const [currentPage, setCurrentPage] = useState(1); // Track the current page
 
+<<<<<<< HEAD
   const url = `https://api.themoviedb.org/3/movie/upcoming?api_key=${process.env.REACT_APP_API_KEY}`;
+=======
+  const url =  `https://api.themoviedb.org/3/movie/upcoming?api_key=${process.env.REACT_APP_API_KEY}`;
+>>>>>>> origin/main
   const baseImageUrl = "https://image.tmdb.org/t/p/w500";
   const placeholderImage = 'https://media.istockphoto.com/id/1007557230/photo/movie-projector-on-dark-background.jpg?s=1024x1024&w=is&k=20&c=0cMSe-iphQA4VPhY8mNUz26xvdt7bRTH_hNt_znx9M0=';
 
