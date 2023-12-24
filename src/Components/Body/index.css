@@ -1,32 +1,33 @@
-*{
+* {
   padding: 0;
   margin: 0;
 }
+
 .container {
-    max-width: 99.8%;
-    margin: 0;
-  }
-  
-  .heading {
-    font-size: 1.3rem;
-    margin-top:1rem;
-    text-align: center;
-    text-transform: capitalize;
-  }
-  .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Center the items horizontally */
-    align-items: center;     /* Center the items vertically */
-    gap: 20px;
-    width: 90%;
-    padding: 1rem;
-    margin: 0 auto; 
-    margin-bottom: 3.5rem; 
-    /* margin-bottom: 200px;        Center the entire container horizontally */
-  }
-  
-  .card {
+  max-width: 99.8%;
+  margin: 0;
+}
+
+.heading {
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 90%;
+  padding: 1rem;
+  margin: 0 auto;
+  margin-bottom: 3.5rem;
+}
+
+.card {
   border: 1px solid #ddd;
   padding: 0.7rem !important;
   background-color: lightslategray;
@@ -37,120 +38,120 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  }
-  
-  .poster-image {
-    width: 100%;
-    height: 190px;
-    border-radius: 8px;
-  }
-  
-  .title {
-    font-size: 15px;
-    white-space: nowrap;     /* Prevent line breaks */
-  overflow: hidden;        /* Hide overflow content */
-  text-overflow: ellipsis;
-  }
-  .details-container {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 4px; /* Add margin for spacing */
-  }
-  .release-date {
-    font-size: 14px;
-    margin-bottom: 0.1rem;
+}
 
-  }
-  
-  .media-type{
-    font-size: 14px;
-    text-transform: capitalize;
-  }
-  /* Add or update these styles in your existing styles.css or create a new CSS file */
+.poster-image {
+  width: 100%;
+  height: 190px;
+  border-radius: 8px;
+}
+
+.title {
+  font-size: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.details-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4px;
+}
+
+.release-date {
+  font-size: 14px;
+  margin-bottom: 0.1rem;
+}
+
+.media-type {
+  font-size: 14px;
+  text-transform: capitalize;
+}
 
 .scroll-to-top {
-    position: fixed;
-    bottom: 4rem;
-    right: 20px;
-    cursor: pointer;
-    background-color: gray;
-    padding: 0.5rem;
-    border-radius: 50%;
-    z-index: 10000;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .scroll-to-top:hover {
-    background-color: #f0f0f0; /* Set hover background color */
-  }
-  
-  .scroll-to-top svg {
-    color: black; /* Set arrow color */
-  }
-  .linear-progress-container {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1000; /* Ensure it's above other elements */
-  }
-  
-  .linear-progress {
-    width: 200px; /* Adjust the width as needed */
-  }
+  position: fixed;
+  bottom: 4rem;
+  right: 20px;
+  cursor: pointer;
+  background-color: gray;
+  padding: 0.5rem;
+  border-radius: 50%;
+  z-index: 10000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
-  .pagination {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: .5rem;
-    width: 95%;
-  }
-  
-/* 
-  //search// */
+.scroll-to-top:hover {
+  background-color: #f0f0f0;
+}
 
-  .search-container{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding:0.1rem 3rem;
-    color: gray;
-    background-color: darkgray;
-    width: 73%;
-    margin: 1rem;
-    margin-left: auto;
-    margin-right: auto;
-border-radius: 3rem;
+.scroll-to-top svg {
+  color: black;
+}
+
+.linear-progress-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+.linear-progress {
+  width: 200px;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem;
+  width: 95%;
+}
+
+/* Search styles */
+.search-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.1rem 3rem;
+  color: gray;
+  background-color: darkgray;
+  width: 73%;
+  margin: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 3rem;
 }
 
 .not-found-message {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50vh; /* Adjust as needed */
+  height: 50vh;
 }
 
 .not-found-message img {
   max-width: 100%;
   max-height: 100%;
 }
+
 /* Media queries */
 
 /* Mobile view */
-@media (max-width: 600px) {
+@media only screen and (min-width: 480px) {
   .card-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Center the items horizontally */
-    align-items: center;     /* Center the items vertically */
+    justify-content: center;
+    align-items: center;
     gap: 1rem;
     width: 90%;
     padding: 0.5rem;
-    margin: 0 auto; 
-    margin-bottom: 3.5rem; 
-    /* margin-bottom: 200px;        Center the entire container horizontally */
+    margin: 0 auto;
+    margin-bottom: 3.5rem;
   }
+
   .card {
     border: 1px solid #ddd;
     padding: 0.3rem !important;
@@ -162,38 +163,40 @@ border-radius: 3rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    }
+  }
+
   .search-container {
     width: 80%;
     padding: 0.1rem 1rem;
   }
-  
+
   .poster-image {
     width: 100%;
     height: 120px;
     border-radius: 8px;
   }
-  
+
   .title {
     font-size: 15px;
-    white-space: nowrap;     /* Prevent line breaks */
-  overflow: hidden;        /* Hide overflow content */
-  text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
+
   .details-container {
     display: flex;
     justify-content: space-between;
-    margin-top: 3px; /* Add margin for spacing */
+    margin-top: 3px;
   }
-  
-  .media-type{
+
+  .media-type {
     font-size: 14px;
     text-transform: capitalize;
   }
 }
 
 /* Tablet view */
-@media (min-width: 601px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) { 
   .card {
     border: 1px solid #ddd;
     padding: 0.5rem;
@@ -205,7 +208,8 @@ border-radius: 3rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    }
+  }
+
   .search-container {
     width: 80%;
     padding: 0.1rem 1rem;
@@ -213,7 +217,7 @@ border-radius: 3rem;
 }
 
 /* Laptop view */
-@media (min-width: 1025px) and (max-width: 1440px) {
+@media only screen and (min-width: 992px) {
   .card {
     border: 1px solid #ddd;
     padding: 0.5rem;
@@ -225,7 +229,8 @@ border-radius: 3rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    }
+  }
+
   .search-container {
     width: 80%;
     padding: 0.1rem 1rem;
