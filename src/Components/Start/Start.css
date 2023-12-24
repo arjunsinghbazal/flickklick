@@ -107,7 +107,7 @@
         padding: 0.7rem;
         display: flex;
         flex-direction: column;
-        height: 40%;
+        height: fit-content;
         gap: 1rem;
       }
       .left_landing .button{
