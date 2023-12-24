@@ -15,13 +15,13 @@ const Series = () => {
   const [showScroll, setShowScroll] = useState(false);
   const [selectedItemId, setSelectedItemId] = useState(null);
   const [currentPage, setCurrentPage] = useState(1); // Track the current page
-
+  const Url="c8c010423eb7251fc6442dd8535a73e0";
   const baseImageUrl = "https://image.tmdb.org/t/p/w500";
   const handlePageChange = (event, page) => {
     setCurrentPage(page);
   };
 
-  const url = `https://api.themoviedb.org/3/discover/tv?api_key=${process.env.REACT_APP_API_KEY}&page=${currentPage}`;
+  const url = `https://api.themoviedb.org/3/discover/tv?api_key=${Url}&page=${currentPage}`;
   const placeholderImage = 'https://media.istockphoto.com/id/1007557230/photo/movie-projector-on-dark-background.jpg?s=1024x1024&w=is&k=20&c=0cMSe-iphQA4VPhY8mNUz26xvdt7bRTH_hNt_znx9M0=';
 
   useEffect(() => {

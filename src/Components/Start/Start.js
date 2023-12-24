@@ -3,13 +3,14 @@ import axios from "axios";
 import "./Start.css";
 import { useNavigate } from "react-router-dom";
 const Start = () => {
+  const Url="c8c010423eb7251fc6442dd8535a73e0";
  const [data,setdata]=useState([])
 const navigate=useNavigate();
   useEffect(() => {
     const fetchTrendingPosters = async () => {
       try {
        const response = await axios.get(
-            `https://api.themoviedb.org/3/trending/all/week?api_key=${process.env.REACT_APP_API_KEY}`
+            `https://api.themoviedb.org/3/trending/all/week?api_key=${Url}`
           );
      setdata(response.data.results);
       } catch (error) {

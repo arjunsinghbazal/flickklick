@@ -19,8 +19,8 @@ const Movies = () => {
   const handlePageChange = (event, page) => {
     setCurrentPage(page);
   };
-
-  const url = `https://api.themoviedb.org/3/discover/movie?api_key=${process.env.REACT_APP_API_KEY}&page=${currentPage}`;
+  const Url="c8c010423eb7251fc6442dd8535a73e0";
+  const url = `https://api.themoviedb.org/3/discover/movie?api_key=${Url}&page=${currentPage}`;
   const placeholderImage = 'https://media.istockphoto.com/id/1007557230/photo/movie-projector-on-dark-background.jpg?s=1024x1024&w=is&k=20&c=0cMSe-iphQA4VPhY8mNUz26xvdt7bRTH_hNt_znx9M0=';
 
   useEffect(() => {
