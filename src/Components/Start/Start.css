@@ -40,6 +40,7 @@
   
   .right {
     width: 40%;
+    height: 50%;
     overflow: hidden;
     display: flex;
     gap: 3rem;
@@ -53,7 +54,7 @@
     padding: 2rem;
     transition: opacity 1s ease-in-out, transform 0.5s ease-in-out; 
     position: relative;
-    animation: moveWord 50s linear infinite;
+    animation: moveWord 60s linear infinite;
   }
   
   .right img:hover {
@@ -66,7 +67,7 @@
       right: 0%;
     }
     100% {
-      right:1000%;
+      right:500%;
     }
   }
   
@@ -125,7 +126,6 @@
     }
       .right img {
         max-width:120px;
-        height: auto;
         box-shadow: rgb(246, 246, 251) 0px 20px 30px -10px;
         height: auto;
         padding: 1rem;
@@ -171,9 +171,9 @@
       }
       
       .right img {
-        max-width: 200px;
+        max-width: 150px;
         box-shadow: rgb(246, 246, 251) 0px 20px 30px -10px;
-        height: 70%;
+        height: auto;
         padding: 1rem;
         transition: opacity 1s ease-in-out, transform 0.5s ease-in-out; /* Add transform transition */
         position: relative;
